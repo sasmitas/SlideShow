@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head >
+
+    <title>My Album</title>
+    <link rel="icon" type="image/png" href="http://g.etfv.co/http://www.w3.org/">
+    <link rel="stylesheet" href="css/mystyles.css">
+
+    <script src="js/slideshow.js"></script>
+
+</head>
+<body onload="onBodyLoad()">
+
+    <div class="headersDiv" id="headersDiv" style="display: block">
+        <h1 id="h1">Welcome Guest !!!  </h1>
+        <h2 id="h2" style="display: none;">Choose the category to watch </h2>
+     </div>
+
+    <div class="selectbox" id="selectbox" style="display: none">
+
+        <select onchange="showSlides()" id="options">
+            <option value="Flowers">Flowers</option>
+            <option value="Birds">Birds</option>
+            <option value="Nature">Nature</option>
+            <option value="Cars">Cars</option>
+        </select>
+
+    </div>
+
+    <div class="canvasdiv" id="canvasdiv" style="display: none">
+        <button type="button" id="goBacktoMainPage" onclick="showMainPage()">Change category</button>
+        <div class="cnvdiv" id="cnvdiv" style="display: block">
+            <button type="Prev" id="PrevButton" onclick="showPrevImage()">Prev</button>
+            <canvas id="cnv1" width="350" height="450" > </canvas>
+            <button type="Next" id="NextButton" onclick="showNextImage()">Next</button>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
