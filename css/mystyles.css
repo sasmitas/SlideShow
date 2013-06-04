@@ -1,0 +1,105 @@
+
+
+body {
+    font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif ;
+    background-image: url("../images/welcomeBackground.jpg");
+
+}
+div.headersDiv {
+    position:absolute;
+    top: 10px;
+    left:750px;
+    width:1000px;
+}
+div.headersDiv h1{
+    position:relative;
+    top: 10px;
+    left:0px;
+    color: purple;
+    animation: rightToLeftH1 1s;
+}
+div.headersDiv h2
+{
+    position:absolute;
+
+    top: 80px;
+    left:0px;
+    background-color:red;
+    animation: leftTorighth2 2s;
+    animation-delay:2s;
+}
+@keyframes changecolor
+{
+    from {background: darkgrey}
+    to {background: blue}
+}
+
+@keyframes rightToLeftH1
+{
+
+    from {color: purple;  left:1000px; }
+    to {color: purple;  right:0px;}
+}
+@keyframes leftTorighth2
+{
+
+    from {background: red; top:2000px;}
+    to {background: red;  top:80px;}
+}
+@keyframes rightToLeftSelect
+{
+
+    from {color: purple;  left:0px; }
+    to {color: purple; left:750px; }
+}
+
+
+div.selectbox select{
+    position:absolute;
+    top: 200px;
+    left:750px;
+    color: purple;
+    animation: rightToLeftSelect 5s;
+    animation-play-state:running;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-duration:2s;
+
+}
+
+#goBacktoMainPage{
+    background: #FF398C;
+    border: 0px solid #AE39FF;
+    display:inline-block;
+    color: #ffffff;
+    text-align: center;
+    font: bold 1em/100px;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    font-family: 'Quando', serif;
+    font-stretch: ultra-expanded;
+    box-shadow: 0 2px 0 #1960FF;
+    border-radius: 4px;
+    background: linear-gradient(top, #1960FF, #1960FF);
+    margin-top: 20px;
+    margin-left: 700px;
+    vertical-align: 150%;
+
+;
+}
+
+#cnv1{
+    text-align: center;
+    border-radius: 4px;
+}
+#canvasdiv{
+   padding-left: 450px;
+}
+#PrevButton{
+   // background-image: url("../images/left.png");
+
+}
+#NextButton{
+   // background-image: url("../images/right.png");
+
+}
